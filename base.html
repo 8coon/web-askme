@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width = device-width, initial-scale = 1">
+
+	<title>Askme</title>
+
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+	<link href="spinner.css" rel="stylesheet">
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-left">
+					<li>
+						<a class="navbar-brand" href="#">
+							<span id="ac-logo-text">
+							<!--span class="glyphicon glyphicon-question-sign"id="ac-logo-glyphicon">
+							</span-->
+								Ask<span id="ac-logo-text-accent">me</span>
+							</span>
+						</a>
+					</li>
+				</ul>
+
+
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<img class="navbar-right ac-avatar-preview" src="graphic/avatar.png">
+					</li>
+					<li>
+						<p class="navbar-text navbar-right ac-userbox">
+							<span class="ac-username">Name Vorname</span><br>
+							<a href="#">Settings</a>
+							|
+							<a href="#">Logout</a>
+						</p>
+					</li>
+				</ul>
+
+				<ul class="nav navbar-nav">
+					<li>
+						<form class="navbar-form navbar-right ac-inline-block" role="search">
+							<div class="form-group">
+								<input type="text" class="form-control ac-inline-block ac-search-text" placeholder="Search">
+								<button type="submit" class="btn btn-default ac-inline-block">
+									<span class="glyphicon glyphicon-search"></span>
+								</button>
+							</div>
+						</form>
+					</li>
+					<li>
+						<button type="button" id="ac-ask-btn" class="btn btn-default navbar-btn navbar-right">
+							Ask!
+						</button>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12" id="ac-nav-links">
+				<a href="#" class="ac-nav-link" selected>New Questions</a>
+				<a href="#" class="ac-nav-link">Hot Questions</a>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="row">
+				<div class="col-sm-9">
+					<div class="ac-post-desc" id="ac-post-id-000">
+						<div class="ac-post-left">
+							<div class="ac-post-img">
+								<img src="graphic/avatar.png">
+
+								<div class="ac-post-updown" id="ac-post-updown-id-000">
+									<div class="input-group input-group-xs spinner">
+										<span class="input-group-btn btn-spinner">
+											<button class="btn btn-secondary" type="button">
+												<i class="glyphicon glyphicon-chevron-left"></i>
+											</button>
+										</span>
+
+										<input type="text" class="form-control" value="42" readonly>
+										
+										<span class="input-group-btn">
+											<button class="btn btn-secondary" type="button">
+												<i class="glyphicon glyphicon-chevron-right"></i>
+											</button>
+										</span>
+
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="ac-post-right">
+							<div class="ac-post-title">
+								<a class="ac-large" href="#">How to build a moon park?</a>
+							</div>
+
+							<div class="ac-post-text">
+								Guys, i have trouble with a moon park, Can't find th black-jack and hookers...
+							</div>
+
+							<div class="ac-post-down">
+								<a href="#" class="ac-post-answer">Answer(3)</a>
+								Tags: 
+								<a href="#" class="ac-post-tag">black-jack</a>
+								<a href="#" class="ac-post-tag">bender</a>
+								<a href="#" class="ac-post-tag">hookers</a>
+								<a href="#" class="ac-post-tag">futurama</a>
+							</div>
+						</div>
+					</div>
+
+					<!-- Insert more posts here -->
+
+					<div class="ac-pagination">
+						<a href="#" selected>1</a>
+						<a href="#">2</a>
+						<a href="#">3</a>
+						<span>...</span>
+						<a href="#">53</a>
+					</div>
+				</div>
+
+				<div class="col-sm-3">
+					<div class="ac-right-box">
+						<div class="ac-large">Popular Tags</div>
+						<span class="ac-tag" style="font-size: 100%;"><a href="#">perl</a></span>
+						<span class="ac-tag" style="font-size: 100%;"><a href="#">python</a></span>
+						<span class="ac-tag" style="font-size: 100%;"><a href="#">TechnoPark</a></span>
+						<span class="ac-tag" style="font-size: 100%;"><a href="#">MySQL</a></span>
+						<span class="ac-tag" style="font-size: 100%;"><a href="#">django</a></span>
+						<span class="ac-tag" style="font-size: 100%;"><a href="#">Mail.Ru</a></span>
+						<span class="ac-tag" style="font-size: 100%;"><a href="#">Voloshin</a></span>
+						<span class="ac-tag" style="font-size: 100%;"><a href="#">Firefox</a></span>
+					</div>
+
+					<div class="ac-right-box">
+						<div class="ac-large">Best Members</div>
+						<a href="#">Mr. Freeman</a><br>
+						<a href="#">Dr. House</a><br>
+						<a href="#">Bender</a><br>
+						<a href="#">Queen Victoria</a><br>
+						<a href="#">V. Pupkin</a><br>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="navbar-bottom row">
+		<div class="navbar-inner" id="ac-footer">
+			<div class="container">
+				<div class="col-sm-6" id="ac-footer-left">
+					Peshkoff Serge ⒸMMXVI<br>
+					Made for Technopark<br>
+				</div>
+
+				<div class="col-sm-6" id="ac-footer-right">
+					<a href="https://park.mail.ru/profile/s.peshkov/">Profile</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script src="jquery/jquery.min.js" type="text/javascript"></script>
+	<script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="spinner.js" type="text/javascript"></script>
+	<script src="script.js" type="text/javascript"></script>
+</body>
+</html>
