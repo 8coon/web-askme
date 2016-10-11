@@ -18,3 +18,9 @@ $('#ac-ask-submit').click(function() {
 $('#ac-login').click(function() {
 	$('.ac-error').show();
 });
+
+
+$('#ac-ask').click(function() {
+	window.location.href = 'ask.html';
+})
+
