@@ -1,6 +1,6 @@
 
 
-$('#ac-ask-text').keydown(function() {
+$('#ac-ask-text').keyup(function() {
 	var left = $('#ac-ask-text').attr('maxlength') - $(this).val().length;
 	if (left < 0) {
 		left = 0;
